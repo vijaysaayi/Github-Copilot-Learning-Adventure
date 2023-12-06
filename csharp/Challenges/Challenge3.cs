@@ -1,6 +1,6 @@
 ﻿namespace Challenges;
 
-// Worried about mapping a Person to an Employee? Don't worry, ask Copilot.
+// Worried about mapping a Person to an Employee manually? Don't worry, ask Copilot.
 public static class Challenge3
 {
     public static Employee ToEmployee(this Person person)
