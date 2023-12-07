@@ -1,6 +1,6 @@
 ﻿namespace Challenges;
 
-// Goal : Use copilot to generate some code.
+// Goal : Use copilot to suggest an algorithm.
 public static class Challenge2
 {
     public static (int, int, int) ConvertHexToRGBColorValue(string hexValue)
