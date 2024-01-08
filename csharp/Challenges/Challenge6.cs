@@ -1,11 +1,26 @@
-﻿namespace Challenges;
+﻿
+namespace Challenges;
 
-// Goal : Use copilot to domain specific text structures.
 public static class Challenge6
 {
-    // Hint: Refer test cases to see the format of kusto queries.
-    public static string[] ExtractKustoQueries(string text)
+    // Goal : Implement retry logic using copilot.
+    public static int GetCpuUsageOfApiWithRetry()
     {
-        throw new NotImplementedException();
+        return GetCPUUsageOfApi();
+    }
+
+    // Note: Do not modify this method.
+    // This is a stimulation for BUGGY endpoint.
+    private static int GetCPUUsageOfApi()
+    {
+        var random = new Random();
+        var cpuUsage = random.Next(-1, 1);
+        
+        if (cpuUsage != 1)
+        {
+            throw new Exception("Failed to get CPU usage");
+        }
+
+        return cpuUsage * 73;
     }
 }

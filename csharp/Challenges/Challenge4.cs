@@ -5,28 +5,25 @@ namespace Challenges;
 // Goal : Use copilot to Convert code into a different language
 public static class Challenge4
 {
-    // Convert the following python code into c#
-    // squares = [x**2 for x in range(10)]
-    // print(squares)
+    // def sequence_generator():
+    //    a = 0
+    //    b = 1
+    //    while True:
+    //        yield a
+    //        a, b = b, a + b
 
-    public static List<int> GetSquares()
+    // gen = sequence_generator()
+    // for i in range(10) :
+    //    print(next(gen))
+    public static int[] SequenceGenerator()
     {
         throw new NotImplementedException();
     }
 
-    //def yrange(n):
-    //    i = 0
-    //    while i<n:
-    //        yield i
-    //        i += 1
-    //
-    //def displayResult():
-    //   y = yrange(3)
-    //   print(next(y))
-    //   print(next(y))
-    //   print(next(y))
-
-    public static int[] YRange(int n)
+    // numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    // new_list = numbers[1::3]
+    // print(new_list)
+    public static int[] ModifyTheArray(int[] array)
     {
         throw new NotImplementedException();
     }
