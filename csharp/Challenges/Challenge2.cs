@@ -3,12 +3,14 @@
 // Goal : Use copilot to suggest an algorithm.
 public static class Challenge2
 {
-    public static (int, int, int) ConvertHexToRGBColorValue(string hexValue)
+    // Convert HSL to CMYK
+    public static (int, int, int, int) ConvertHSLToCMYK(int hue, int saturation, int lightness)
     {
         throw new NotImplementedException();
     }
 
-    public static string ConvertRGBColorValueToHex(int red, int green, int blue)
+    // Convert CMYK to HSL
+    public static (int, int, int) ConvertCMYKToHSL(int cyan, int magenta, int yellow, int key)
     {
         throw new NotImplementedException();
     }

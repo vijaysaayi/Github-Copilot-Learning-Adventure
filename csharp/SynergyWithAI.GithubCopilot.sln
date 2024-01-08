@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges", "Challenges\Challenges.csproj", "{533E5C2E-971B-4A51-8E2E-11DC6088A992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges", "Challenges\Challenges.csproj", "{533E5C2E-971B-4A51-8E2E-11DC6088A992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenges.Evaluation", "Challenges.Evaluation\Challenges.Evaluation.csproj", "{CB64E643-A08E-4BAD-A339-C5FAE3B7FF5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenges.Evaluation", "Challenges.Evaluation\Challenges.Evaluation.csproj", "{CB64E643-A08E-4BAD-A339-C5FAE3B7FF5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{BA141AB4-71DB-4B3E-B6CC-3794B2CF9907}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{BA141AB4-71DB-4B3E-B6CC-3794B2CF9907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

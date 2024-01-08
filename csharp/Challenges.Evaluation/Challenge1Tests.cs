@@ -3,22 +3,23 @@ namespace Challenges.Evaluation;
 public class Challenge1Tests
 {
     [Theory]
-    [InlineData("This is a valid number format +1-123-456-7890 and +1-987-654-3210", new[] { "+1-123-456-7890", "+1-987-654-3210" })]
-    [InlineData("Invalid number format 123-456-7890 and 987-654-3210", new string[] { })]
-    [InlineData("No numbers in this text", new string[] { })]
-    public void ExtractPhoneNumbersTests(string text, string[] expectedResults)
+    [InlineData("Today is 2024-01-11T11:25:00Z", new string[] { "2024-01-11T11:25:00Z" })]
+    [InlineData("Today is 2024-01-11T11:25:00Z and tomorrow is 2024-01-12T11:25:00Z", new string[] { "2024-01-11T11:25:00Z", "2024-01-12T11:25:00Z" })]
+    [InlineData("Today is 2024-01-11T11:25:00Z and tomorrow is 2024-01-12T11:25:00Z and yesterday was 2024-01-10T11:25:00Z", new string[] { "2024-01-11T11:25:00Z", "2024-01-12T11:25:00Z", "2024-01-10T11:25:00Z" })]
+    [InlineData("Today is 2024-01-11 11:25:00 ", new string[] { })]
+    public void ExtractDateTimeTests(string text, string[] expectedResults)
     {
-        var phoneNumbers = Challenge1.ExtractPhoneNumbers(text);
-        Assert.Equal(expectedResults, phoneNumbers);
+        var dateAndTime = Challenge1.ExtractDateTime(text);
+        Assert.Equal(expectedResults, dateAndTime);
     }
 
     [Theory]
-    [InlineData("This is a valid email address test@example.com and another one test2@example.com", new[] { "test@example.com", "test2@example.com" })]
-    [InlineData("Invalid email address format test@example and test2@example", new string[] { })]
-    [InlineData("No email addresses in this text", new string[] { })]
-    public void ExtractEmailAddressTests(string text, string[] expectedResults)
+    [InlineData("My client IP is 10.0.0.2", new string[] { "10.0.0.2" })]
+    [InlineData("Machine with IP is 192.168.0.5 was able to connect to 200.0.0.4", new string[] { "192.168.0.5", "200.0.0.4" })]
+    [InlineData("My Ip address range is is 10.0.0.0/27", new string[] { "10.0.0.0/27" })]
+    public void ExtractIpAddressTests(string text, string[] expectedResults)
     {
-        var emailAddresses = Challenge1.ExtractEmailAddress(text);
-        Assert.Equal(expectedResults, emailAddresses);
+        var ipAddress = Challenge1.ExtractIpAddress(text);
+        Assert.Equal(expectedResults, ipAddress);
     }
 }
