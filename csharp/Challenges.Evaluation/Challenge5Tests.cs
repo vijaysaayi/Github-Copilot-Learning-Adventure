@@ -2,14 +2,12 @@
 
 public class Challenge5Tests
 {
-    [Fact]
-    public void YouNeedToImplementThisTest()
+    [Theory]
+    [InlineData("Test-Case-1 : Provide-some-input")]
+    [InlineData("Test-Case-2 : Provide-some-input")]
+    [InlineData("Test-Case-3 : Provide-some-input")]
+    public void YouNeedToProvideTheInlineData(string input)
     {
-        // Arrange
-
-        // Act
-
-        // Assert
-        Assert.True(false);
+        Assert.True(Challenge5.SomeRandomCode(input));
     }
 }
