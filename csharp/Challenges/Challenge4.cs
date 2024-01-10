@@ -2,7 +2,7 @@
 
 namespace Challenges;
 
-// Goal : Use copilot to Convert code into a different language
+// Goal : Use copilot to Convert python code into a different language
 public static class Challenge4
 {
     // def sequence_generator():
@@ -12,10 +12,11 @@ public static class Challenge4
     //        yield a
     //        a, b = b, a + b
 
-    // gen = sequence_generator()
-    // for i in range(10) :
-    //    print(next(gen))
-    public static int[] SequenceGenerator()
+    // def generate_and_display_sequence(n):
+    //     gen = sequence_generator()
+    //     for i in range(n) :
+    //        print(next(gen))
+    public static int[] GenerateAndDisplaySequence(int n)
     {
         throw new NotImplementedException();
     }
